@@ -1,13 +1,12 @@
 ﻿class Program {
     static void Main(string[] args) {
-        int sum = 0;
-        int i = 1;
-        do{
-            sum = sum + 1;
-            ++i;
-        }   while (i <= 5);
+        for (int row = 1; row <= 5; row++) {
+            for (int col = 1; col <= 6; col++) {
+               Console.WriteLine("({0}, {1}) ", row, col); 
 
-             Console.WriteLine(sum);
+            }
 
-    }
+             Console.WriteLine();
+        }  
+   }
 }
